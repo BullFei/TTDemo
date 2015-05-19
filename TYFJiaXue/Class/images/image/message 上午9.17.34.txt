@@ -1,0 +1,42 @@
+===== 9 ====================================
+GET http://course.jaxus.cn/api/video/url?type=online&version=1&videoId=54d97787d3a0b243fb250f15 HTTP/1.1
+Host: course.jaxus.cn
+Accept: */*
+Proxy-Connection: keep-alive
+Cookie: SERVERID=bdb2c66cecf21455839d6cbadf8d35de|1431911716|1431911667
+User-Agent: KeyShare/1.5 (iPhone; iOS 8.3; Scale/2.00) Paros/3.2.13
+Accept-Language: zh-Hans;q=1, en;q=0.9
+Connection: keep-alive
+
+
+HTTP/1.1 200 OK
+Date: Mon, 18 May 2015 01:17:19 GMT
+Content-Type: application/json
+Content-Length: 304
+Connection: keep-alive
+Set-Cookie: SERVERID=bdb2c66cecf21455839d6cbadf8d35de|1431911839|1431911667;Path=/
+
+{
+  "stat": 1, 
+  "url": {
+    "quality_10": "http://cm12.c110.play.bokecc.com/flvs/ca/QxrYC/ukGmdJko4d-10.mp4?t=1431919039&key=9C39BBB56226713E10A0D21560EC4956", 
+    "quality_20": "http://cm12.c110.play.bokecc.com/flvs/ca/QxrYC/ukGmdJko4d-20.mp4?t=1431919039&key=11AD72A1A964EC3DA4FBB40C8CE886D7"
+  }
+}
+
+===== 10 ====================================
+GET http://cm12.c110.play.bokecc.com:80/flvs/ca/QxrYC/ukGmdJko4d-20.mp4?t=1431919039&key=11AD72A1A964EC3DA4FBB40C8CE886D7 HTTP/1.1
+Host: cm12.c110.play.bokecc.com
+User-Agent: VLC/2.2.0-rc2 LibVLC/2.2.0-rc2 Paros/3.2.13
+Range: bytes=0-
+Connection: close
+Icy-MetaData: 1
+
+
+HTTP/1.0 302 Found
+Cache-Control: no-cache
+Connection: close
+Location: http://110.18.246.30/cm12.c110.play.bokecc.com/flvs/ca/QxrYC/ukGmdJko4d-20.mp4?t=1431919039&key=11AD72A1A964EC3DA4FBB40C8CE886D7&wsiphost=ipdb
+
+
+

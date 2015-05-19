@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  TYFJiaXue
+//
+//  Created by 田雨飞 on 15/5/7.
+//  Copyright (c) 2015年 TianYuFei. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Header.h"
+//1.判断是否为IOS7
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue]>=7.0)
+// 2.获得RGB颜色
+#define IWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define MJTextFont [UIFont systemFontOfSize:13]
+#import<SystemConfiguration/SystemConfiguration.h>
+#import<MobileCoreServices/MobileCoreServices.h>
+#import "TYFSingleObject.h"
+#import "TYFPushSingleObject.h"
+#import "ZPublic.h"
+#endif
